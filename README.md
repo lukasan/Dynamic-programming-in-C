@@ -7,6 +7,8 @@ Implementing expression:
 
 ![Image description](dyn.png)
 
+Some code taken from https://www.geeksforgeeks.org/minimum-insertions-to-form-a-palindrome-dp-28/
+
 ## Compiling and running
 To compile, simply call make inside the directory. This will compile both programs.
 ```
