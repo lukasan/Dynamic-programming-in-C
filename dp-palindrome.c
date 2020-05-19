@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 int findMin(int a, int b){
     if (a > b) return b;
@@ -36,6 +37,16 @@ int findMinInserts(char str[], int n)
 }
 
 int main(int argc, char **argv){
-    printf("%d\n", findMinInserts(argv[1], strlen(argv[1])));
+    if (argc != 2){
+        printf("Usage: %s inputString\n", __FILE__);
+        exit(255);
+    }
+    
+    clock_t t;
+    t = clock();
+    printf("Minimum insertions: %d\n", findMinInserts(argv[1], strlen(argv[1])));
+    t = clock() - t;
+    printf("Took %f seconds\n", ((double)t) / CLOCKS_PER_SEC);
+
     return 0;
 }
