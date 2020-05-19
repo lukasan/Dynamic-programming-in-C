@@ -1,19 +1,28 @@
 # Interval dynamic programming in C
 Pages 22 to 26 inclusive: https://web.stanford.edu/class/cs97si/04-dynamic-programming.pdf
 
-Making a polindrome out of a given string inserting least characters possible.
+Finding the number least insertions needed to form a palindrome.
 
 Implementing expression:
 
 ![Image description](dyn.png)
 
-## Running
-To compile, simply call make:
+## Compiling and running
+To compile, simply call make inside the directory. This will compile both programs.
 ```
-make interval-dp
+make
 ```
 
 And then run from console:
 ```
-./interval-dp stringOne stringTwo
+./recursive-palindrome inputString
+```
+and
+```
+./dp-palindrome inputString
+```
+### Cleaning
+Make is configured to remove all compiled programs.
+```
+make clean
 ```

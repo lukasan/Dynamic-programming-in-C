@@ -52,4 +52,5 @@ Mkfile.old
 dkms.conf
 
 # Compiled items
-interval-dp
+recursive-palindrome
+dp-palindrome
